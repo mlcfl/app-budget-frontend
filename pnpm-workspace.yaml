@@ -1,3 +1,6 @@
 onlyBuiltDependencies:
-  - "@parcel/watcher"
+  - '@parcel/watcher'
   - esbuild
+
+overrides:
+  shared: link:../budget-shared

@@ -1,0 +1,34 @@
+{
+	"nav": {
+		"history": "История операций",
+		"accounts": "Счета",
+		"categories": "Категории",
+		"debts": "Долги",
+		"settings": "Настройки"
+	},
+	"accounts": {
+		"addAccountBtn": "Добавить счёт",
+		"noAccountsFound": "Счета не найдены. Нажмите \"Добавить счёт\" для создания нового счёта",
+		"modals": {
+			"addAccount": {
+				"title": "Новый счёт",
+				"name": "Название",
+				"type": "Тип",
+				"currency": "Валюта",
+				"initialBalance": "Начальный баланс",
+				"note": "Комментарий",
+				"cancelBtn": "Отменить",
+				"addBtn": "Добавить",
+				"accountTypes": {
+					"cash": "Наличные",
+					"card": "Карта",
+					"crypto": "Криптовалюта",
+					"other": "Другое"
+				}
+			}
+		}
+	},
+	"settings": {
+		"showSidebar": "Показать правый сайдбар"
+	}
+}

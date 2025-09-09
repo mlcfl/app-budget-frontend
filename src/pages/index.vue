@@ -1,5 +1,7 @@
 <template>
-	<div class="text-center">
-		<div class="text-h5">Welcome to the "Budget" page</div>
-	</div>
+	<div />
 </template>
+
+<script setup>
+await navigateTo("/history");
+</script>

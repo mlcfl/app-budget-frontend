@@ -1,7 +1,7 @@
 import { createVuetify } from "vuetify";
 
 export default defineNuxtPlugin((app) => {
-  const vuetify = createVuetify();
+	const vuetify = createVuetify();
 
-  app.vueApp.use(vuetify);
+	app.vueApp.use(vuetify);
 });

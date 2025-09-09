@@ -39,6 +39,8 @@ export default defineNuxtConfig({
 	],
 	modules: [
 		"@nuxt/eslint",
+		"@pinia/nuxt",
+		"@nuxtjs/i18n",
 		(_options, nuxt) => {
 			nuxt.hooks.hook("vite:extendConfig", (config) => {
 				config.plugins?.push(vuetify({ autoImport: true }));
@@ -68,5 +70,18 @@ export default defineNuxtConfig({
 		public: {
 			apiBase: "", // overridden by NUXT_PUBLIC_API_BASE
 		},
+	},
+	i18n: {
+		defaultLocale: "en",
+		strategy: "no_prefix",
+		detectBrowserLanguage: {
+			useCookie: true,
+			cookieKey: "lang",
+			redirectOn: "root",
+		},
+		locales: [
+			{ code: "en", name: "English", file: "en.json" },
+			{ code: "ru", name: "Русский", file: "ru.json" },
+		],
 	},
 });
