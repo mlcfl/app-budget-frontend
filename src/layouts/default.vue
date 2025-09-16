@@ -40,8 +40,8 @@ const appStore = useAppStore();
 const route = useRoute();
 const currentPageTitle = computed(() => {
 	const currentPath = route.path;
-	const currentNavItem = nav.value.find(
-		(item) => item.props?.to === currentPath
+	const currentNavItem = nav.value.find((item) =>
+		currentPath.startsWith(item.props?.to ?? "")
 	);
 
 	return currentNavItem?.title ?? "";
