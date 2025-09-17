@@ -10,21 +10,25 @@
 		"addAccountBtn": "Добавить счёт",
 		"noAccountsFound": "Счета не найдены. Нажмите \"Добавить счёт\" для создания нового счёта",
 		"modals": {
+			"name": "Название",
+			"type": "Тип",
+			"currency": "Валюта",
+			"initialBalance": "Начальный баланс",
+			"note": "Комментарий",
+			"cancelBtn": "Отменить",
+			"accountTypes": {
+				"cash": "Наличные",
+				"card": "Карта",
+				"crypto": "Криптовалюта",
+				"other": "Другое"
+			},
 			"addAccount": {
 				"title": "Новый счёт",
-				"name": "Название",
-				"type": "Тип",
-				"currency": "Валюта",
-				"initialBalance": "Начальный баланс",
-				"note": "Комментарий",
-				"cancelBtn": "Отменить",
-				"addBtn": "Добавить",
-				"accountTypes": {
-					"cash": "Наличные",
-					"card": "Карта",
-					"crypto": "Криптовалюта",
-					"other": "Другое"
-				}
+				"addBtn": "Добавить"
+			},
+			"editAccount": {
+				"title": "Редактировать счёт",
+				"editBtn": "Сохранить"
 			}
 		}
 	},

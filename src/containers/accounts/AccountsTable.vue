@@ -106,7 +106,7 @@ const processedData = computed(() => {
 	return (
 		data.value?.map((account) => ({
 			...account,
-			type: t(`accounts.modals.addAccount.accountTypes.${account.type}`),
+			type: t(`accounts.modals.accountTypes.${account.type}`),
 			balance: formatBalance(account.balance, account.type),
 			initialBalance: formatBalance(account.initialBalance, account.type),
 			createdDate: formatDate(account.createdDate),
@@ -145,7 +145,6 @@ const addAccount = () => {
 };
 
 const editAccount = (id: string) => {
-	console.log(id);
 	accountsStore.activeAccountId = id;
 	accountsStore.editAccountModal = true;
 };

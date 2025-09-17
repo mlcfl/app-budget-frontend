@@ -6,14 +6,14 @@
 					<VCol cols="12">
 						<VTextField
 							v-model="formModel.name"
-							:label="$t('accounts.modals.addAccount.name')"
+							:label="$t('accounts.modals.name')"
 							:disabled="isAddingAccount"
 						/>
 					</VCol>
 					<VCol cols="12" md="6">
 						<VSelect
 							v-model="formModel.type"
-							:label="$t('accounts.modals.addAccount.type')"
+							:label="$t('accounts.modals.type')"
 							:items="accountTypes"
 							item-title="title"
 							item-value="value"
@@ -24,7 +24,7 @@
 					<VCol cols="12" md="6">
 						<VAutocomplete
 							v-model="formModel.currency"
-							:label="$t('accounts.modals.addAccount.currency')"
+							:label="$t('accounts.modals.currency')"
 							:items="currencyList"
 							:loading="isCurrenciesLoading"
 							:disabled="isAddingAccount"
@@ -35,21 +35,21 @@
 							v-model="formModel.initialBalance"
 							:min="0"
 							:precision="precision"
-							:label="$t('accounts.modals.addAccount.initialBalance')"
+							:label="$t('accounts.modals.initialBalance')"
 							:disabled="isAddingAccount"
 						/>
 					</VCol>
 				</VRow>
 				<VTextarea
 					v-model="formModel.note"
-					:label="$t('accounts.modals.addAccount.note')"
+					:label="$t('accounts.modals.note')"
 					:disabled="isAddingAccount"
 				/>
 			</template>
 			<VDivider />
 			<VCardActions class="bg-surface-light">
 				<VBtn
-					:text="$t('accounts.modals.addAccount.cancelBtn')"
+					:text="$t('accounts.modals.cancelBtn')"
 					variant="plain"
 					:disabled="isAddingAccount"
 					@click="accountsStore.addAccountModal = false"

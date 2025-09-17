@@ -10,21 +10,25 @@
 		"addAccountBtn": "Add account",
 		"noAccountsFound": "No accounts found. Click \"Add account\" to add a new one",
 		"modals": {
+			"name": "Name",
+			"type": "Type",
+			"currency": "Currency",
+			"initialBalance": "Initial balance",
+			"note": "Comment",
+			"cancelBtn": "Cancel",
+			"accountTypes": {
+				"cash": "Cash",
+				"card": "Card",
+				"crypto": "Cryptocurrency",
+				"other": "Other"
+			},
 			"addAccount": {
 				"title": "New account",
-				"name": "Name",
-				"type": "Type",
-				"currency": "Currency",
-				"initialBalance": "Initial balance",
-				"note": "Comment",
-				"cancelBtn": "Cancel",
-				"addBtn": "Add",
-				"accountTypes": {
-					"cash": "Cash",
-					"card": "Card",
-					"crypto": "Cryptocurrency",
-					"other": "Other"
-				}
+				"addBtn": "Add"
+			},
+			"editAccount": {
+				"title": "Edit account",
+				"editBtn": "Save"
 			}
 		}
 	},

@@ -19,7 +19,7 @@ export const useAccountTypesQuery = () => {
 		select(data) {
 			return data.map((value) => ({
 				value,
-				title: t(`accounts.modals.addAccount.accountTypes.${value}`),
+				title: t(`accounts.modals.accountTypes.${value}`),
 			}));
 		},
 	});
