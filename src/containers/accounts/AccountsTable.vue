@@ -11,7 +11,7 @@
 		@click:row="onRowClick"
 	>
 		<template #top>
-			<VSheet class="d-flex justify-end">
+			<VSheet class="mb-2 d-flex justify-end">
 				<VBtn
 					variant="outlined"
 					prepend-icon="mdi-plus"
@@ -150,7 +150,6 @@ const editAccount = (id: string) => {
 };
 
 const removeAccount = (id: string) => {
-	console.log(id);
 	accountsStore.activeAccountId = id;
 	accountsStore.removeAccountModal = true;
 };

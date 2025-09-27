@@ -3,6 +3,7 @@
 		<AccountsTable />
 		<AddAccountModal />
 		<EditAccountModal />
+		<RemoveAccountModal />
 	</VContainer>
 </template>
 
@@ -11,5 +12,6 @@ import {
 	AccountsTable,
 	AddAccountModal,
 	EditAccountModal,
+	RemoveAccountModal,
 } from "~/containers/accounts";
 </script>

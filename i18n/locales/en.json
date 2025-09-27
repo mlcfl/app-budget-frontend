@@ -29,6 +29,11 @@
 			"editAccount": {
 				"title": "Edit account",
 				"editBtn": "Save"
+			},
+			"removeAccount": {
+				"title": "Delete account",
+				"actionBtn": "Delete",
+				"warning": "Do you really want to delete the account \"{name}\"? This action will remove all data associated with this account, including the transaction history."
 			}
 		}
 	},
