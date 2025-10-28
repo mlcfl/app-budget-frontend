@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/vue-query";
+import { Api } from "~/api";
 
 export const useAccountTypesQuery = () => {
 	const { t } = useI18n();
@@ -6,16 +7,7 @@ export const useAccountTypesQuery = () => {
 	return useQuery<string[], Error, { title: string; value: string }[]>({
 		queryKey: ["account-types"],
 		initialData: [],
-		queryFn() {
-			return $fetch("/api/account-types", {
-				method: "GET",
-				server: false,
-				lazy: true,
-				headers: {
-					"X-Requested-With": "XMLHttpRequest",
-				},
-			});
-		},
+		queryFn: () => Api.get("/account-types"),
 		select(data) {
 			return data.map((value) => ({
 				value,
