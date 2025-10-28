@@ -1,6 +1,7 @@
 <template>
 	<VContainer max-width="1000px">
 		<AccountsTable />
+
 		<AddAccountModal />
 		<EditAccountModal />
 		<RemoveAccountModal />

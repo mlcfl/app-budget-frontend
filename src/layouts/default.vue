@@ -44,9 +44,9 @@ const currentPageTitle = computed(() => {
 		currentPath.startsWith(item.props?.to ?? "")
 	);
 
-	return currentNavItem?.title ?? "";
+	return currentNavItem?.title ?? "Budget";
 });
 
 // Update title in browser
-useHead({ title: currentPageTitle });
+useHead({ title: `MLC | ${currentPageTitle.value}` });
 </script>
