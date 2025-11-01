@@ -1,5 +1,7 @@
 <template>
-	<div class="text-center">
-		<div class="text-h5">Categories</div>
-	</div>
+	<CategoriesPage />
 </template>
+
+<script lang="ts" setup>
+import { CategoriesPage } from "@/containers";
+</script>

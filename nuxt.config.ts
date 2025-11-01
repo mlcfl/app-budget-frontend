@@ -65,6 +65,7 @@ export default defineNuxtConfig({
 		"@nuxt/eslint",
 		"@pinia/nuxt",
 		"@nuxtjs/i18n",
+		"@vueuse/nuxt",
 		(_options, nuxt) => {
 			nuxt.hooks.hook("vite:extendConfig", (config) => {
 				config.plugins?.push(vuetify({ autoImport: true }));

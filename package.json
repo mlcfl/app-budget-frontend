@@ -17,12 +17,15 @@
 	"dependencies": {
 		"@mdi/font": "^7.4.47",
 		"@tanstack/vue-query": "^5.87.4",
+		"@vueuse/core": "^14.0.0",
+		"@vueuse/nuxt": "^14.0.0",
 		"joi": "^17.13.3",
 		"nuxt": "^3.16.2",
 		"pinia": "^3.0.1",
 		"shared": "link:../budget-shared",
 		"vue": "^3.5.13",
 		"vue-router": "^4.5.0",
+		"vuedraggable": "^4.1.0",
 		"vuetify": "^3.8.0"
 	},
 	"devDependencies": {

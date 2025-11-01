@@ -37,6 +37,12 @@
 			}
 		}
 	},
+	"categories": {
+		"tabs": {
+			"incomes": "Доходы",
+			"expenses": "Расходы"
+		}
+	},
 	"settings": {
 		"showSidebar": "Показать правый сайдбар"
 	}

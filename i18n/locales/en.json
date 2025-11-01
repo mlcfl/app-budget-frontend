@@ -37,6 +37,12 @@
 			}
 		}
 	},
+	"categories": {
+		"tabs": {
+			"incomes": "Incomes",
+			"expenses": "Expenses"
+		}
+	},
 	"settings": {
 		"showSidebar": "Show right sidebar"
 	}
