@@ -10,7 +10,7 @@
 		"dev": "nuxt dev --dotenv .env.development",
 		"generate": "nuxt generate --dotenv .env.production",
 		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare",
+		"postinstall": "nuxt prepare --dotenv .env.production",
 		"lint": "eslint .",
 		"lint:fix": "eslint . --fix"
 	},
